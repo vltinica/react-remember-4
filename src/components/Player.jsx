@@ -6,11 +6,11 @@ export default function Player() {
   const playerName = useRef();
 
   const [enteredPlayerName, setEnteredPlayerName] = useState(null);
-  // const [submitted, setSubmitted] = useState(false)
 
 
   const handleClick = () => {
     setEnteredPlayerName(playerName.current.value);
+    playerName.current.value = " ";
   }
 
   return (
